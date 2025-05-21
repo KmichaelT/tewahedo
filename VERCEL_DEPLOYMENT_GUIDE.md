@@ -57,6 +57,20 @@ You can find these values in your Firebase project settings and database provide
    - Posting answers and comments
    - Admin functionality (if applicable)
 
+## Recent Fixes
+
+We've addressed the module import error that was occurring in the Vercel deployment:
+
+```
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/server/routes' imported from /var/task/api/index.js
+```
+
+The following changes were made to fix this issue:
+
+1. **Dynamic Imports in API Entry Point**: Modified `api/index.ts` to use dynamic imports with fallback paths to handle Vercel's serverless environment.
+
+2. **Updated Vercel Configuration**: Added `includeFiles` configuration in `vercel.json` to ensure server and shared directories are included in the deployment.
+
 ## Troubleshooting
 
 ### Database Connection Issues
@@ -82,6 +96,14 @@ If API routes return 404 errors:
 1. Check the Vercel deployment logs for any errors
 2. Verify that the `vercel.json` file is correctly configured
 3. Ensure your API routes are properly defined in the server code
+
+### Module Not Found Errors
+
+If you encounter module not found errors:
+
+1. Check that the `includeFiles` configuration in `vercel.json` includes all necessary directories
+2. Verify that import paths in your code are using the dynamic import pattern for server files
+3. Check the Vercel build logs to see which files are being included in the deployment
 
 ## Custom Domain Setup
 
