@@ -1,0 +1,120 @@
+chunk-RPCDYKBN.js?v=94278d17:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+AuthContext.tsx:34 Checking for redirect result...
+firebase.ts:94 Checking for redirect result...
+queryClient.ts:41 Making query to: /api/questions
+queryClient.ts:46 Response status: 200
+queryClient.ts:55 Query response data: []
+queryClient.ts:41 Making query to: /api/all-answers
+queryClient.ts:46 Response status: 200
+queryClient.ts:55 Query response data: []
+AuthContext.tsx:52 Firebase auth state changed: signed in
+firebase.ts:126 No redirect result found
+AuthContext.tsx:93 CRITICAL: Default admin detected: kmichaeltb@gmail.com
+queryClient.ts:41 Making query to: /api/admin/questions
+queryClient.ts:42 
+            
+            
+           GET https://84eec0ab-a064-46db-9d13-cdb99492e642-00-dymmhb2mr92q.riker.replit.dev/api/admin/questions 401 (Unauthorized)
+(anonymous) @ queryClient.ts:42
+fetchFn @ @tanstack_react-query.js?v=94278d17:840
+run @ @tanstack_react-query.js?v=94278d17:494
+start @ @tanstack_react-query.js?v=94278d17:536
+fetch @ @tanstack_react-query.js?v=94278d17:926
+executeFetch_fn @ @tanstack_react-query.js?v=94278d17:2211
+onSubscribe @ @tanstack_react-query.js?v=94278d17:1898
+subscribe @ @tanstack_react-query.js?v=94278d17:24
+(anonymous) @ @tanstack_react-query.js?v=94278d17:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=94278d17:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=94278d17:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=94278d17:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=94278d17:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=94278d17:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=94278d17:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=94278d17:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=94278d17:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=94278d17:19416
+commitRoot @ chunk-RPCDYKBN.js?v=94278d17:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=94278d17:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=94278d17:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=94278d17:18627
+queryClient.ts:46 Response status: 401
+queryClient.ts:58 Query error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:53:7
+(anonymous) @ queryClient.ts:58
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=94278d17:840
+run @ @tanstack_react-query.js?v=94278d17:494
+start @ @tanstack_react-query.js?v=94278d17:536
+fetch @ @tanstack_react-query.js?v=94278d17:926
+executeFetch_fn @ @tanstack_react-query.js?v=94278d17:2211
+onSubscribe @ @tanstack_react-query.js?v=94278d17:1898
+subscribe @ @tanstack_react-query.js?v=94278d17:24
+(anonymous) @ @tanstack_react-query.js?v=94278d17:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=94278d17:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=94278d17:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=94278d17:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=94278d17:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=94278d17:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=94278d17:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=94278d17:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=94278d17:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=94278d17:19416
+commitRoot @ chunk-RPCDYKBN.js?v=94278d17:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=94278d17:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=94278d17:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=94278d17:18627
+queryClient.ts:41 Making query to: /api/admin/users
+queryClient.ts:42 
+            
+            
+           GET https://84eec0ab-a064-46db-9d13-cdb99492e642-00-dymmhb2mr92q.riker.replit.dev/api/admin/users 401 (Unauthorized)
+(anonymous) @ queryClient.ts:42
+fetchFn @ @tanstack_react-query.js?v=94278d17:840
+run @ @tanstack_react-query.js?v=94278d17:494
+start @ @tanstack_react-query.js?v=94278d17:536
+fetch @ @tanstack_react-query.js?v=94278d17:926
+executeFetch_fn @ @tanstack_react-query.js?v=94278d17:2211
+onSubscribe @ @tanstack_react-query.js?v=94278d17:1898
+subscribe @ @tanstack_react-query.js?v=94278d17:24
+(anonymous) @ @tanstack_react-query.js?v=94278d17:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=94278d17:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=94278d17:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=94278d17:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=94278d17:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=94278d17:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=94278d17:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=94278d17:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=94278d17:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=94278d17:19416
+commitRoot @ chunk-RPCDYKBN.js?v=94278d17:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=94278d17:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=94278d17:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=94278d17:18627
+queryClient.ts:46 Response status: 401
+queryClient.ts:58 Query error: Error: 401: {"message":"Authentication required"}
+    at throwIfResNotOk (queryClient.ts:6:11)
+    at async queryClient.ts:53:7
+(anonymous) @ queryClient.ts:58
+await in (anonymous)
+fetchFn @ @tanstack_react-query.js?v=94278d17:840
+run @ @tanstack_react-query.js?v=94278d17:494
+start @ @tanstack_react-query.js?v=94278d17:536
+fetch @ @tanstack_react-query.js?v=94278d17:926
+executeFetch_fn @ @tanstack_react-query.js?v=94278d17:2211
+onSubscribe @ @tanstack_react-query.js?v=94278d17:1898
+subscribe @ @tanstack_react-query.js?v=94278d17:24
+(anonymous) @ @tanstack_react-query.js?v=94278d17:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=94278d17:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=94278d17:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=94278d17:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=94278d17:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=94278d17:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=94278d17:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=94278d17:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=94278d17:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=94278d17:19416
+commitRoot @ chunk-RPCDYKBN.js?v=94278d17:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=94278d17:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=94278d17:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=94278d17:18627

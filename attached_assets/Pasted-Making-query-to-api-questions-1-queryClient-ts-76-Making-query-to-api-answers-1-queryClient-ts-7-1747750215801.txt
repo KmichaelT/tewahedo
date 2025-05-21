@@ -1,0 +1,152 @@
+Making query to: /api/questions/1
+queryClient.ts:76 Making query to: /api/answers/1
+queryClient.ts:76 Making query to: /api/questions/1/comments
+AuthContext.tsx:34 Checking for redirect result...
+firebase.ts:94 Checking for redirect result...
+remoteConfig.js:2 No new values fetched. Using cached values.
+3queryClient.ts:94 Response status: 200
+queryClient.ts:103 Query response data: {title: "What is the significance of the Ethiopian Orthodox Tewahedo Church's unique calendar?", content: "<p>I've noticed that the Ethiopian Orthodox Church…s events compared to other Orthodox churches?</p>", author: 'HistoryBuff42', id: 1, date: '2025-05-13T13:59:42.419Z', …}
+queryClient.ts:103 Query response data: (5) [{…}, {…}, {…}, {…}, {…}]
+queryClient.ts:103 Query response data: [{…}]
+AuthContext.tsx:52 Firebase auth state changed: signed in
+firebase.ts:126 No redirect result found
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+queryClient.ts:76 Making query to: /api/questions/1/liked
+queryClient.ts:86 Including Firebase auth token in query
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+queryClient.ts:94 Response status: 200
+queryClient.ts:103 Query response data: {liked: false}
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+AuthContext.tsx:124 User michealbekele.data@gmail.com is not an admin
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:225 Liking comment 2
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+queryClient.ts:41 Including Firebase auth token in request
+queryClient.ts:45 Making POST request to /api/comments/2/like
+queryClient.ts:47 Request data: {}
+queryClient.ts:50 
+            
+            
+           POST https://84eec0ab-a064-46db-9d13-cdb99492e642-00-dymmhb2mr92q.riker.replit.dev/api/comments/2/like 500 (Internal Server Error)
+apiRequest @ queryClient.ts:50
+await in apiRequest
+mutationFn @ QuestionDetail.tsx:226
+fn @ @tanstack_react-query.js?v=94278d17:1189
+run @ @tanstack_react-query.js?v=94278d17:494
+start @ @tanstack_react-query.js?v=94278d17:536
+execute @ @tanstack_react-query.js?v=94278d17:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=94278d17:2630
+(anonymous) @ @tanstack_react-query.js?v=94278d17:3295
+handleCommentLike @ QuestionDetail.tsx:524
+onClick @ QuestionDetail.tsx:729
+callCallback2 @ chunk-RPCDYKBN.js?v=94278d17:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=94278d17:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=94278d17:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=94278d17:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=94278d17:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=94278d17:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=94278d17:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=94278d17:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=94278d17:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=94278d17:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=94278d17:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=94278d17:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=94278d17:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=94278d17:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=94278d17:5449Understand this error
+queryClient.ts:7 API Error: 500 Internal Server Error - {"message":"Failed to like comment"}
+throwIfResNotOk @ queryClient.ts:7
+await in throwIfResNotOk
+apiRequest @ queryClient.ts:57
+await in apiRequest
+mutationFn @ QuestionDetail.tsx:226
+fn @ @tanstack_react-query.js?v=94278d17:1189
+run @ @tanstack_react-query.js?v=94278d17:494
+start @ @tanstack_react-query.js?v=94278d17:536
+execute @ @tanstack_react-query.js?v=94278d17:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=94278d17:2630
+(anonymous) @ @tanstack_react-query.js?v=94278d17:3295
+handleCommentLike @ QuestionDetail.tsx:524
+onClick @ QuestionDetail.tsx:729
+callCallback2 @ chunk-RPCDYKBN.js?v=94278d17:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=94278d17:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=94278d17:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=94278d17:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=94278d17:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=94278d17:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=94278d17:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=94278d17:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=94278d17:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=94278d17:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=94278d17:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=94278d17:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=94278d17:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=94278d17:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=94278d17:5449Understand this error
+queryClient.ts:8 Request URL: https://84eec0ab-a064-46db-9d13-cdb99492e642-00-dymmhb2mr92q.riker.replit.dev/api/comments/2/like, Method: basic
+throwIfResNotOk @ queryClient.ts:8
+await in throwIfResNotOk
+apiRequest @ queryClient.ts:57
+await in apiRequest
+mutationFn @ QuestionDetail.tsx:226
+fn @ @tanstack_react-query.js?v=94278d17:1189
+run @ @tanstack_react-query.js?v=94278d17:494
+start @ @tanstack_react-query.js?v=94278d17:536
+execute @ @tanstack_react-query.js?v=94278d17:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=94278d17:2630
+(anonymous) @ @tanstack_react-query.js?v=94278d17:3295
+handleCommentLike @ QuestionDetail.tsx:524
+onClick @ QuestionDetail.tsx:729
+callCallback2 @ chunk-RPCDYKBN.js?v=94278d17:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=94278d17:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=94278d17:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=94278d17:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=94278d17:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=94278d17:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=94278d17:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=94278d17:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=94278d17:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=94278d17:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=94278d17:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=94278d17:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=94278d17:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=94278d17:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=94278d17:5449Understand this error
+QuestionDetail.tsx:435 Can delete check: {commentId: 1, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 3, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 5, commentUserId: 822, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 2, commentUserId: 2, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
+QuestionDetail.tsx:435 Can delete check: {commentId: 4, commentUserId: 1, firebaseUid: 'K45wD0LfjfdU7IoeHwRD2C2FhLn1', numericUserId: 4507221, isCommenter: false, …}
