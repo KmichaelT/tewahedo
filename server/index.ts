@@ -3,7 +3,26 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
+// For CORS in development environment
+const allowCrossDomain = (req: Request, res: Response, next: NextFunction) => {
+  res.header('Access-Control-Allow-Origin', process.env.NODE_ENV === 'production' ? '*' : 'http://localhost:3000');
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  
+  // intercept OPTIONS method
+  if ('OPTIONS' === req.method) {
+    res.sendStatus(200);
+  } else {
+    next();
+  }
+};
+
 const app = express();
+
+// Apply CORS middleware
+app.use(allowCrossDomain);
+
+// Parse JSON and URL-encoded bodies
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 

@@ -45,7 +45,19 @@ npm run dev
 
 ## Deployment
 
-- For Vercel deployment: [VERCEL_DEPLOYMENT.md](VERCEL_DEPLOYMENT.md)
+### Vercel Deployment (Recommended)
+
+This project is configured for seamless deployment on Vercel. Follow these steps:
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Set up the required environment variables (see `.env.example`)
+4. Deploy!
+
+For detailed instructions, see: [VERCEL_DEPLOYMENT_GUIDE.md](VERCEL_DEPLOYMENT_GUIDE.md)
+
+### Alternative Deployment
+
 - For Render deployment: [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## Contributing

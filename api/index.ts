@@ -1,7 +1,9 @@
+import 'dotenv/config';
 import express from 'express';
 import { registerRoutes } from '../server/routes';
 import { setupAuth } from '../server/replitAuth';
 import { createServer } from 'http';
+import path from 'path';
 
 const app = express();
 const server = createServer(app);
@@ -16,12 +18,12 @@ registerRoutes(app).catch((err) => {
   console.error('Failed to register routes', err);
 });
 
-// For Vercel, we'll serve static files from the dist directory
-app.use(express.static('dist'));
+// For Vercel, we'll serve static files from the dist/public directory
+app.use(express.static(path.join(process.cwd(), 'dist/public')));
 
 // Route all other requests to the SPA
 app.get('*', (req, res) => {
-  res.sendFile('index.html', { root: 'dist' });
+  res.sendFile('index.html', { root: path.join(process.cwd(), 'dist/public') });
 });
 
 // Error handler
@@ -29,6 +31,14 @@ app.use((err: any, _req: express.Request, res: express.Response, _next: express.
   console.error(err);
   res.status(500).json({ error: 'Internal Server Error' });
 });
+
+// Handle errors in production differently
+if (process.env.NODE_ENV === 'production') {
+  app.use((err: any, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+    console.error('Production error:', err);
+    res.status(500).json({ error: 'Internal Server Error' });
+  });
+}
 
 // For Vercel serverless functions
 export default app;
