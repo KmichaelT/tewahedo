@@ -67,9 +67,14 @@ Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/var/task/server/routes' impor
 
 The following changes were made to fix this issue:
 
-1. **Dynamic Imports in API Entry Point**: Modified `api/index.ts` to use dynamic imports with fallback paths to handle Vercel's serverless environment.
+1. **Enhanced Dynamic Imports in API Entry Point**: Modified `api/index.ts` to use a three-tier fallback system for imports:
+   - First attempts relative imports (for local development)
+   - Then tries path-resolved imports (for some deployment scenarios)
+   - Finally attempts direct Vercel-specific absolute paths as a last resort
 
-2. **Updated Vercel Configuration**: Added `includeFiles` configuration in `vercel.json` to ensure server and shared directories are included in the deployment.
+2. **Updated Vercel Configuration**: Enhanced the `vercel.json` configuration:
+   - Added `package.json` and `tsconfig.json` to the `includeFiles` list
+   - Enabled bundling with `"bundle": true` to improve module resolution
 
 ## Troubleshooting
 

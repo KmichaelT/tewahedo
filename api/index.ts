@@ -14,9 +14,15 @@ const importRoutes = async () => {
     // Try to import using relative path first (for local development)
     return await import('../server/routes');
   } catch (error) {
-    // If that fails, try to import using the path relative to the current file
-    console.log('Trying alternative import path for routes');
-    return await import(path.join(__dirname, '../server/routes'));
+    try {
+      // If that fails, try to import using the path relative to the current file
+      console.log('Trying alternative import path for routes');
+      return await import(path.join(__dirname, '../server/routes'));
+    } catch (secondError) {
+      // If both fail, try the absolute path that Vercel uses in production
+      console.log('Trying Vercel-specific import path for routes');
+      return await import('/var/task/server/routes');
+    }
   }
 };
 
@@ -25,9 +31,15 @@ const importAuth = async () => {
     // Try to import using relative path first (for local development)
     return await import('../server/replitAuth');
   } catch (error) {
-    // If that fails, try to import using the path relative to the current file
-    console.log('Trying alternative import path for auth');
-    return await import(path.join(__dirname, '../server/replitAuth'));
+    try {
+      // If that fails, try to import using the path relative to the current file
+      console.log('Trying alternative import path for auth');
+      return await import(path.join(__dirname, '../server/replitAuth'));
+    } catch (secondError) {
+      // If both fail, try the absolute path that Vercel uses in production
+      console.log('Trying Vercel-specific import path for auth');
+      return await import('/var/task/server/replitAuth');
+    }
   }
 };
 
