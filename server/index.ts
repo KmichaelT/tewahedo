@@ -3,11 +3,26 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
-// For CORS in development environment
+// For CORS in all environments
 const allowCrossDomain = (req: Request, res: Response, next: NextFunction) => {
-  res.header('Access-Control-Allow-Origin', process.env.NODE_ENV === 'production' ? '*' : 'http://localhost:3000');
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  // In production, allow the Vercel deployment URL and any custom domains
+  // In development, allow localhost
+  const origin = req.headers.origin;
+  if (process.env.NODE_ENV === 'production') {
+    // Allow Vercel domains and any configured allowed origins
+    const allowedOrigins = process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : [];
+    if (origin && (origin.includes('vercel.app') || allowedOrigins.includes(origin))) {
+      res.header('Access-Control-Allow-Origin', origin);
+    } else {
+      res.header('Access-Control-Allow-Origin', '*');
+    }
+  } else {
+    res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  }
+  
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
+  res.header('Access-Control-Allow-Credentials', 'true');
   
   // intercept OPTIONS method
   if ('OPTIONS' === req.method) {

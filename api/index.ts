@@ -19,9 +19,15 @@ const importRoutes = async () => {
       console.log('Trying alternative import path for routes');
       return await import(path.join(__dirname, '../server/routes'));
     } catch (secondError) {
-      // If both fail, try the absolute path that Vercel uses in production
+      // If both fail, try the absolute path that Vercel might use in production
       console.log('Trying Vercel-specific import path for routes');
-      return await import('/var/task/server/routes');
+      try {
+        return await import('/var/task/server/routes');
+      } catch (thirdError) {
+        // Last resort - try the path relative to the project root
+        console.log('Trying project root import path for routes');
+        return await import(path.join(process.cwd(), 'server/routes'));
+      }
     }
   }
 };
@@ -29,16 +35,22 @@ const importRoutes = async () => {
 const importAuth = async () => {
   try {
     // Try to import using relative path first (for local development)
-    return await import('../server/replitAuth');
+    return await import('../server/firebaseAuth');
   } catch (error) {
     try {
       // If that fails, try to import using the path relative to the current file
       console.log('Trying alternative import path for auth');
-      return await import(path.join(__dirname, '../server/replitAuth'));
+      return await import(path.join(__dirname, '../server/firebaseAuth'));
     } catch (secondError) {
-      // If both fail, try the absolute path that Vercel uses in production
+      // If both fail, try the absolute path that Vercel might use in production
       console.log('Trying Vercel-specific import path for auth');
-      return await import('/var/task/server/replitAuth');
+      try {
+        return await import('/var/task/server/firebaseAuth');
+      } catch (thirdError) {
+        // Last resort - try the path relative to the project root
+        console.log('Trying project root import path for auth');
+        return await import(path.join(process.cwd(), 'server/firebaseAuth'));
+      }
     }
   }
 };
@@ -81,6 +93,15 @@ if (process.env.NODE_ENV === 'production') {
     console.error('Production error:', err);
     res.status(500).json({ error: 'Internal Server Error' });
   });
+}
+
+// Add type augmentation for Express Request to include user property
+declare global {
+  namespace Express {
+    interface Request {
+      user?: any;
+    }
+  }
 }
 
 // For Vercel serverless functions

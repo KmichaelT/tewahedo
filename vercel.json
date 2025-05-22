@@ -10,22 +10,24 @@
       "src": "api/index.ts",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["server/**", "shared/**", "package.json", "tsconfig.json"],
-        "bundle": true
+        "includeFiles": ["server/**", "shared/**", "package.json", "tsconfig.json", ".env", ".env.*"],
+        "bundle": true,
+        "nodeVersion": "18.x"
       }
     },
     {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist/public"
+        "distDir": "dist/public",
+        "zeroConfig": true
       }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/dist/api/index.js"
+      "dest": "/api/index.ts"
     },
     {
       "src": "/assets/(.*)",
@@ -43,5 +45,8 @@
       "src": "/(.*)",
       "dest": "/dist/public/index.html"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }

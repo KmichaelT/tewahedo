@@ -80,6 +80,11 @@ export class MemStorage implements IStorage {
   private commentId: number;
   private likeId: number;
 
+  private commentLikes: Map<number, CommentLike>;
+  private answerLikes: Map<number, AnswerLike>;
+  private commentLikeId: number;
+  private answerLikeId: number;
+
   constructor() {
     this.users = new Map();
     this.questions = new Map();

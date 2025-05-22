@@ -1,4 +1,6 @@
-import type { Express, Request, Response, NextFunction } from "express";
+import express from "express";
+import type { Request, Response, NextFunction } from "express";
+type Express = express.Application;
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import session from "express-session";
