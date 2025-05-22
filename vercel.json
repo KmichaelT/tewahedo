@@ -18,14 +18,14 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "dist"
+        "distDir": "dist/public"
       }
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "api/index.ts"
+      "dest": "/dist/api/index.js"
     },
     {
       "src": "/assets/(.*)",
@@ -37,11 +37,11 @@
     },
     {
       "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|json|svg))",
-      "dest": "/$1"
+      "dest": "/dist/public/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/dist/public/index.html"
     }
   ]
 }
