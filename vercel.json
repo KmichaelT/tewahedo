@@ -31,11 +31,11 @@
     },
     {
       "src": "/assets/(.*)",
-      "dest": "/assets/$1"
+      "dest": "/dist/public/assets/$1"
     },
     {
       "src": "/favicon.ico",
-      "dest": "/favicon.ico"
+      "dest": "/dist/public/favicon.ico"
     },
     {
       "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|ico|json|svg))",

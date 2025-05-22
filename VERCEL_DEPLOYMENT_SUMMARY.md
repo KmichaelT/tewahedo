@@ -10,6 +10,7 @@ The following changes have been made to prepare the application for deployment o
 - Specified Node.js version 22.x for compatibility (updated from 18.x)
 - Added `zeroConfig: true` to the static build configuration
 - Updated API route destination to point directly to the API entry point
+- Fixed static asset routing to correctly point to `/dist/public/assets/` directory
 - Added environment variable configuration for production
 
 ### 2. Enhanced Module Resolution in `api/index.ts`
@@ -67,6 +68,14 @@ NODE_ENV=production
 - Run database migrations using Drizzle ORM if needed
 
 ## Troubleshooting
+
+### 404 Errors for Static Assets
+
+If you encounter 404 errors when loading static assets (JS, CSS, images):
+
+1. Check that the routes in `vercel.json` correctly point to the actual file locations in the build output
+2. Ensure the `dest` paths in the routes configuration match the directory structure of your build
+3. For assets referenced in HTML with paths like `/assets/...`, make sure the corresponding route in `vercel.json` points to `/dist/public/assets/$1`
 
 ### Module Not Found Errors
 
