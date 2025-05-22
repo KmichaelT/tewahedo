@@ -7,7 +7,7 @@ The following changes have been made to prepare the application for deployment o
 ### 1. Updated `vercel.json`
 
 - Added `.env` and `.env.*` to `includeFiles` to ensure environment variables are included
-- Specified Node.js version 18.x for compatibility
+- Specified Node.js version 22.x for compatibility (updated from 18.x)
 - Added `zeroConfig: true` to the static build configuration
 - Updated API route destination to point directly to the API entry point
 - Added environment variable configuration for production

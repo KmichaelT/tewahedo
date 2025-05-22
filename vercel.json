@@ -12,7 +12,7 @@
       "config": {
         "includeFiles": ["server/**", "shared/**", "package.json", "tsconfig.json", ".env", ".env.*"],
         "bundle": true,
-        "nodeVersion": "18.x"
+        "nodeVersion": "22.x"
       }
     },
     {
